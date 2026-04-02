@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ofertat - Travelia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="offers">
+  <div id="site-header"></div>
+  <section class="page-hero small-hero"><div class="container"><h1>Ofertat</h1><p>Ofertat live të Travelia.</p></div></section>
+  <section>
+    <div class="container">
+      <div class="filters-row">
+        <select class="control" id="filterCity"></select>
+        <select class="control" id="filterType">
+          <option value="all">Të gjitha llojet</option>
+          <option value="All Inclusive">All Inclusive</option>
+          <option value="City Break">City Break</option>
+          <option value="Luxury">Luxury</option>
+          <option value="Romantic">Romantic</option>
+        </select>
+      </div>
+      <div class="offer-grid" id="allOffers"></div>
+      <div class="empty-state" id="offersEmpty">Nuk ka oferta për këtë filtër.</div>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <a class="float-wa" id="floatWhatsapp" target="_blank" href="https://wa.me/38348722112">💬</a>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

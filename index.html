@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelia L.L.C</title>
+  <meta name="description" content="Travelia L.L.C - bileta avioni, hotele, city breaks dhe paketa turistike." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Premium Travel Agency</div>
+        <h1 id="hero-title">Dream. <span class="gold">Explore.</span> Discover.</h1>
+        <p id="hero-subtitle">Bileta avioni, hotele, city breaks dhe paketa turistike me rezervim të shpejtë.</p>
+        <div class="hero-actions">
+          <a href="offers.html" class="btn btn-primary">Shiko Ofertat</a>
+          <a id="hero-whatsapp" href="https://wa.me/38348722112" class="btn btn-dark" target="_blank">Rezervo në WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="search-card">
+        <h3>Kërko Destinacionin</h3>
+        <p>Gjej ofertën e duhur dhe kontakto Travelia direkt në WhatsApp.</p>
+        <div class="field">
+          <label for="destinationSelect">Zgjidh qytetin</label>
+          <select class="control" id="destinationSelect"></select>
+        </div>
+        <div class="field">
+          <label for="tripType">Lloji i udhëtimit</label>
+          <select class="control" id="tripType">
+            <option value="all">— Të gjitha —</option>
+            <option value="All Inclusive">All Inclusive</option>
+            <option value="City Break">City Break</option>
+            <option value="Luxury">Luxury</option>
+            <option value="Romantic">Romantic</option>
+          </select>
+        </div>
+        <button class="btn btn-dark full" id="searchBtn">🔎 Kërko Oferta</button>
+        <div class="quick-tags" id="quickTags"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Ofertat <span class="gold">Kryesore</span></h2>
+          <div class="section-sub">Të dhënat merren live nga databaza.</div>
+        </div>
+      </div>
+      <div class="offer-grid" id="featuredOffers"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Pse <span class="gold">Travelia</span></h2>
+          <div class="section-sub">Brend modern, ofertë e shpejtë dhe komunikim direkt.</div>
+        </div>
+      </div>
+      <div class="why-grid">
+        <div class="why"><div class="why-icon">✈️</div><h4>Oferta të zgjedhura</h4><p>Destinacione të kuruara për shitje reale.</p></div>
+        <div class="why"><div class="why-icon">⚡</div><h4>Rezervim i shpejtë</h4><p>Klienti kalon direkt në WhatsApp.</p></div>
+        <div class="why"><div class="why-icon">🛡️</div><h4>Besim</h4><p>Website profesional me kontakt dhe hartë reale.</p></div>
+        <div class="why"><div class="why-icon">🌍</div><h4>Live updates</h4><p>Ofertat përditësohen live nga admin paneli.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <a class="float-wa" id="floatWhatsapp" target="_blank" href="https://wa.me/38348722112">💬</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="supabase-config.js"></script>
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>
